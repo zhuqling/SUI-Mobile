@@ -627,4 +627,8 @@
         modalPreloaderTitle: '加载中',
         modalContainer : document.body 
     };
+
+    $(function() {
+        $('.page').find(".popup, .panel, .panel-overlay, .popover").appendTo(document.body);
+    });
 }(Zepto);
