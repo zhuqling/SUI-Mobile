@@ -58,6 +58,7 @@ module.exports = function(grunt) {
                   'js/page.js',
                   'js/tabs.js',
                   'js/accordion.js',
+                  'js/sortable.js',
                   'js/modal.js',
                   'js/calendar.js',
                   'js/picker.js',

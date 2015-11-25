@@ -148,5 +148,6 @@ $(document).on("click", ".toggle-sortable, .open-sortable, .close-sortable", fun
         $.sortableClose(clickedData.sortable);
     }
 });
+$.initSortable();
 
 }(Zepto);
