@@ -64,10 +64,11 @@ $.accordionClose = function (item) {
 };
 
 $(document).on("click", ".accordion-item .item-content, .accordion-item-toggle", function(e) {
-    e.preventDefault();
+    e.preventDefault();console.log('1')
     var clicked = $(this);
     // Accordion
     if (clicked.hasClass('accordion-item-toggle') || (clicked.hasClass('item-link') && clicked.parent().hasClass('accordion-item'))) {
+        console.log('2')
         var accordionItem = clicked.parent('.accordion-item');
         if (accordionItem.length === 0) accordionItem = clicked.parents('.accordion-item');
         if (accordionItem.length === 0) accordionItem = clicked.parents('li');
